@@ -1,6 +1,13 @@
-﻿if (6>3)
+﻿// if (6>3)
+// {
+// Console.WriteLine("Hello, World!");
+// }
+
+string name = Console.ReadLine();
+
+if (name == "kalleanka")
 {
-Console.WriteLine("Hello, World!");
+    System.Console.WriteLine($"Welcome {name}!");
 }
 
 Console.ReadLine();
