@@ -33,11 +33,20 @@
 // }
 // //for loop
 
-string password = Console.ReadLine();
-while (password != "simon"){
-    System.Console.WriteLine("Du har fel");
-    password = Console.ReadLine();
+// string password = Console.ReadLine();
+// while (password != "simon"){
+//     System.Console.WriteLine("Du har fel");
+//     password = Console.ReadLine();
+// }
+
+for (int i = 0; i < 5; i++)
+{
+    string svar = Console.ReadLine();
+    int num;
+    bool Isanumber = int.TryParse(svar, out num);
+
+    if (num > 5)
+    {
+        System.Console.WriteLine("Talet är högre än 5");
+    }
 }
-
-
-Console.ReadLine();
