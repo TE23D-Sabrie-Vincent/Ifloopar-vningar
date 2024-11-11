@@ -28,9 +28,16 @@
 // }
 // // while loop
 
-for (int i=0; i < 32; i++ ){
-    System.Console.WriteLine("Hello World!");
+// for (int i=0; i < 32; i++ ){
+//     System.Console.WriteLine("Hello World!");
+// }
+// //for loop
+
+string password = Console.ReadLine();
+while (password != "simon"){
+    System.Console.WriteLine("Du har fel");
+    password = Console.ReadLine();
 }
-//for loop
+
 
 Console.ReadLine();
