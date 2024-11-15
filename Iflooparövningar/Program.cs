@@ -39,14 +39,23 @@
 //     password = Console.ReadLine();
 // }
 
-for (int i = 0; i < 5; i++)
-{
-    string svar = Console.ReadLine();
-    int num;
-    bool Isanumber = int.TryParse(svar, out num);
+// for (int i = 0; i < 5; i++)
+// {
+//     string svar = Console.ReadLine();
+//     int num;
+//     bool Isanumber = int.TryParse(svar, out num);
 
-    if (num > 5)
-    {
-        System.Console.WriteLine("Talet är högre än 5");
-    }
-}
+//     if (num > 5)
+//     {
+//         System.Console.WriteLine("Talet är högre än 5");
+//     }
+// }
+
+// string grej = Console.ReadLine();
+// int number;
+// // bool Isanumber =  int.TryParse(grej, out number);
+// while (int.TryParse(grej, out number))
+// {
+//  System.Console.WriteLine($"Du skrev nummer {number}!");
+// }
+
