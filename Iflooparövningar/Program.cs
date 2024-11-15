@@ -51,11 +51,14 @@
 //     }
 // }
 
-// string grej = Console.ReadLine();
-// int number;
-// // bool Isanumber =  int.TryParse(grej, out number);
-// while (int.TryParse(grej, out number))
-// {
-//  System.Console.WriteLine($"Du skrev nummer {number}!");
-// }
+string grej = Console.ReadLine();
+int number;
+// bool Isanumber =  int.TryParse(grej, out number);
+while (!int.TryParse(grej, out number))
+{
+    System.Console.WriteLine($"Du skrev INTE ett nummer >:(");
+    grej = Console.ReadLine();
+}
+
+
 
