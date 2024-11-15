@@ -51,14 +51,47 @@
 //     }
 // }
 
-string grej = Console.ReadLine();
+// string grej = Console.ReadLine();
+// int number;
+// // bool Isanumber =  int.TryParse(grej, out number);
+// while (!int.TryParse(grej, out number))
+// {
+//     System.Console.WriteLine($"Du skrev INTE ett nummer >:(");
+//     grej = Console.ReadLine();
+// }
+
+System.Console.WriteLine("Välj ett nummer");
+int rättnum = 5;
+string gissning = Console.ReadLine();
 int number;
-// bool Isanumber =  int.TryParse(grej, out number);
-while (!int.TryParse(grej, out number))
+while (!int.TryParse(gissning, out number))
 {
-    System.Console.WriteLine($"Du skrev INTE ett nummer >:(");
-    grej = Console.ReadLine();
+    System.Console.WriteLine("Skriv ett nummer");
+    gissning = Console.ReadLine();
 }
+while (number != rättnum)
+{
+    if (number < rättnum)
+    {
+        System.Console.WriteLine("Ditt nummer är för lågt");
+        System.Console.WriteLine("Försök igen");
 
+    }
+    else if (number > rättnum)
+    {
+        System.Console.WriteLine("Ditt nummer är för högt");
+        System.Console.WriteLine("Försök igen");
 
+    }
+    gissning = Console.ReadLine();
+
+    while (!int.TryParse(gissning, out number))
+    {
+        System.Console.WriteLine("Skriv ett nummer");
+        gissning = Console.ReadLine();
+    }
+
+}
+System.Console.WriteLine("Yayyyy, du har rättt!!!");
+Console.ReadLine();
 
